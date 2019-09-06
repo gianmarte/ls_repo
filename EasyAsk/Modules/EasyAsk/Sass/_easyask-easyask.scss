@@ -1,0 +1,60 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.facets-tab
+{
+	float: right;
+
+	> li {
+		float: right;
+	}
+}
+
+.facets-view-selector {
+	border: 1px solid $lightGrey;
+	border-radius: 4px 4px 0 0;
+	padding: 10px 20px 10px 40px;
+}
+
+.lonestar-icon-24-compact
+{	
+	outline: none;
+	&:after 
+	{
+		background-position: -46px -323px;
+		left: 5px;
+		content: " ";
+	}
+
+	&:active 
+	{
+		background-color: $superLightGrey;
+		border-bottom: 1px solid $superLightGrey;
+	}
+}
+
+.lonestar-icon-24-detailed
+{
+	border-bottom: 1px solid $superLightGrey;
+	background-color: $superLightGrey;
+	outline: none;
+
+	&:after 
+	{
+		background-position: -118px -291px;
+		left: 5px;
+		content: " ";
+	}
+
+	&:active 
+	{
+		background-color: $superLightGrey;
+		border-bottom: 1px solid $superLightGrey;
+	}
+}

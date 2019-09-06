@@ -1,0 +1,110 @@
+{
+	"name": "EasyAsk",
+	"fantasyName": "Easy Ask Integration",
+	"vendor": "Kodella",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"version": "1.0.0",
+	"description": "Module for Integrating Easy Ask on the PLP and Search",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/EasyAsk/Configuration/EasyAsk.json",
+			"Modules/EasyAsk/Configuration/EasyAsk.PageSize.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/EasyAsk/Templates/kodella_easyask_easyask.tpl",
+					"Modules/CartExt/Templates/kodella_easyask_cartext.tpl",
+					"Modules/ProductViewsExt/Templates/kodella_easyask_productviewsext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_faceted_navigation_item_ext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_item_list_show_selector_ext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_browse_category_heading.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/EasyAsk/Templates/kodella_easyask_easyask.tpl",
+					"Modules/CartExt/Templates/kodella_easyask_cartext.tpl",
+					"Modules/ProductViewsExt/Templates/kodella_easyask_productviewsext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_faceted_navigation_item_ext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_item_list_show_selector_ext.tpl",
+					"Modules/EasyAsk/Templates/kodella_facets_browse_category_heading.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/EasyAsk/Sass/_easyask-easyask.scss",
+			"myaccount": "Modules/EasyAsk/Sass/_easyask-easyask.scss"
+		},
+		"files": [
+			"Modules/EasyAsk/Sass/_easyask-easyask.scss",
+			"Modules/CartExt/Sass/_easyask-cartext.scss",
+			"Modules/ProductViewsExt/Sass/_easyask-productviewsext.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/EasyAsk/JavaScript/Kodella.EasyAsk.EasyAsk.js",
+			"myaccount": "Modules/EasyAsk/JavaScript/Kodella.EasyAsk.EasyAsk.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/EasyAsk/JavaScript/Kodella.EasyAsk.EasyAsk.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Router.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.Browse.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Model.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigation.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigationItem.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemCell.View.Ext.js",
+					"Modules/CartExt/JavaScript/Kodella.EasyAsk.CartExt.js",
+					"Modules/CartExt/JavaScript/Cart.QuickAddToCart.View.Ext.js",
+					"Modules/ProductViewsExt/JavaScript/Kodella.EasyAsk.ProductViewsExt.js",
+					"Modules/ProductViewsExt/JavaScript/ProductViews.Price.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemListShowSelector.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.Browse.CategoryHeading.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigationItemCategory.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemListSortSelector.View.Ext.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/EasyAsk/JavaScript/Kodella.EasyAsk.EasyAsk.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Router.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.Browse.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Model.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigation.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigationItem.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemCell.View.Ext.js",
+					"Modules/CartExt/JavaScript/Kodella.EasyAsk.CartExt.js",
+					"Modules/CartExt/JavaScript/Cart.QuickAddToCart.View.Ext.js",
+					"Modules/ProductViewsExt/JavaScript/Kodella.EasyAsk.ProductViewsExt.js",
+					"Modules/ProductViewsExt/JavaScript/ProductViews.Price.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemListShowSelector.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.Browse.CategoryHeading.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.FacetedNavigationItemCategory.View.Ext.js",
+					"Modules/EasyAsk/JavaScript/EasyAsk.Facets.ItemListSortSelector.View.Ext.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Kodella/EasyAsk@1.0.0",
+	"activation_id": "1",
+	"extension_id": "1501"
+}
