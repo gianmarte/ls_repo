@@ -1,0 +1,82 @@
+{
+    "name": "ProductLineExt",
+    "fantasyName": "Product Line Module Extension",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA",
+    "description": "Product Line Module Extension",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ProductLineExt.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ProductLineExt/Sass/_productlineext-productlineext.scss",
+            "myaccount": "Modules/ProductLineExt/Sass/_productlineext-productlineext.scss",
+            "checkout": "Modules/ProductLineExt/Sass/_productlineext-productlineext.scss"
+        },
+        "files": [
+            "Modules/ProductLineExt/Sass/_productlineext-productlineext.scss",
+            "Modules/ProductLineExt/Sass/_product-line-stock-description-ext.scss",
+            "Modules/ProductLineExt/Sass/_product-line-stock-ext.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ProductLineExt/Templates/product_line_stock_description_ext.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ProductLineExt/Templates/product_line_stock_description_ext.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ProductLineExt/Templates/product_line_stock_description_ext.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js",
+            "myaccount": "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js",
+            "checkout": "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js",
+                    "Modules/ProductLineExt/JavaScript/ProductLineExt.StockDescription.View.Ext.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js",
+                    "Modules/ProductLineExt/JavaScript/ProductLineExt.StockDescription.View.Ext.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/ProductLineExt/JavaScript/Kodella.ProductLineExt.ProductLineExt.js",
+                    "Modules/ProductLineExt/JavaScript/ProductLineExt.StockDescription.View.Ext.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\ProductLineExt"
+}

@@ -1,0 +1,80 @@
+{
+    "name": "PDPModalWidget",
+    "fantasyName": "PDP Modal Widget",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "description": "Tool tip on product details page description section",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/PDPModalWidget.Service.ss"
+            ]
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/PDPModalWidget/Sass/_pdpmodalwidget-pdpmodalwidget.scss",
+            "myaccount": "Modules/PDPModalWidget/Sass/_pdpmodalwidget-pdpmodalwidget.scss"
+        },
+        "files": [
+            "Modules/PDPModalWidget/Sass/_pdpmodalwidget-pdpmodalwidget.scss",
+            "Modules/PDPModalWidget/Sass/_pdpmodalwidget.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPModalWidget/Templates/kodella_pdpmodalwidget_pdpmodalwidget.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/PDPModalWidget/Templates/kodella_pdpmodalwidget_pdpmodalwidget.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/PDPModalWidget/JavaScript/Kodella.PDPModalWidget.PDPModalWidget.js",
+            "myaccount": "Modules/PDPModalWidget/JavaScript/Kodella.PDPModalWidget.PDPModalWidget.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/PDPModalWidget/JavaScript/Kodella.PDPModalWidget.PDPModalWidget.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.View.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.Collection.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/PDPModalWidget/JavaScript/Kodella.PDPModalWidget.PDPModalWidget.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.View.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.Collection.js",
+                    "Modules/PDPModalWidget/JavaScript/PDPModalWidget.Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/PDPModalWidget/SuiteScript/PDPModalWidget.ServiceController.js",
+        "files": [
+            "Modules/PDPModalWidget/SuiteScript/Kodella.PDPModalWidget.PDPModalWidget.js",
+            "Modules/PDPModalWidget/SuiteScript/PDPModalWidget.ServiceController.js",
+            "Modules/PDPModalWidget/SuiteScript/PDPModalWidget.Model.js"
+        ]
+    },
+    "local_folder": "Workspace\\PDPModalWidget"
+}
