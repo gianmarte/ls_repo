@@ -1,0 +1,1279 @@
+///////////////////////////////////////////////////////////////
+//header secondary nav
+.header-menu-secondary-nav {
+	//@extend .container;
+	width: 220px;
+	float: left;
+	position: absolute;
+	margin-left: -4.5px;
+	padding-top: 6px;
+
+	@media (min-width: 980px) and (max-width: 1199px) {
+		margin-left: 10.5px;
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//header search
+
+.header-menu-search {
+	float: right;
+}
+
+.header-menu-search-link {
+	font-size: $sc-font-size-xl;
+	background: none;
+	padding: $sc-padding-lv2;
+	color: $sc-color-secondary;
+	cursor: pointer;
+	position: relative;
+	line-height: 34px;
+}
+.header-menu-search-link:hover {
+	color: $sc-color-theme-500;
+}
+.header-menu-search-link.active {
+	color: $sc-color-copy;
+}
+
+.header-menu-search-icon {
+	@extend .fa;
+	@extend %fa-search;
+	font-size: $sc-font-size-xxl;
+}
+
+.header-menu-searchmobile-link {
+	margin-right: 0;
+	cursor: pointer;
+	background: none;
+
+	@media (min-width: $screen-sm-min) {
+		margin-right: $sc-margin-lv2;
+	}
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: - ($sc-padding-lv2);
+	position: relative;
+	display: block;
+	border: 1px solid #CFCFCF;
+	border-width: 0 0 1px 1px;
+	background-color: white;
+	-webkit-box-shadow: 0 0 10px -2px #847e77;
+	box-shadow: 0 0 10px -2px #846E77;
+	width: 221px;
+	height: 463px;
+	border-right: 1px solid #CFCFCF;
+
+	&:first-child {
+		border-top: 10px solid #f3c600;
+	}
+
+	&:before {
+		width: 164px;
+		position: absolute;
+		top: -20px;
+		height: 10px;
+		left: -1.5px;
+		content: " ";
+		background-color: #F1C331;
+		border: 1px solid #99863B;
+		border-width: 0px 1px;
+	}
+}
+
+.header-menu-level1 > li {
+	//Kodella Comment
+	//float: left;
+	margin-left: -0.5px;
+
+	&:nth-child(8) {
+		height: 43px;
+	}
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	padding: 4px 6px;
+	color: black;
+    background-color: $sc-main-navigation-link-background-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: $sc-main-navigation-link-letter-spacing;
+    border-style: solid;
+	border-color: $sc-main-navigation-link-border-color;
+	border-top-width: $sc-main-navigation-link-border-top-width;
+	border-bottom-width: $sc-main-navigation-link-border-bottom-width;
+	text-decoration: none !important;
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 2px;
+
+	//KODELLA COMMENT
+	//margin-right: $sc-main-navigation-link-margin-right;
+	//padding-top: ($sc-padding-lv2) - ($sc-main-navigation-link-border-top-width);
+	//padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-border-bottom-width);
+	//line-height: 34px;
+
+	&:hover {
+		color: black;
+	}
+
+    &:active{
+		color: #FFFFFF !important;
+		background-color: black;
+
+		border-style: solid;
+		border-color: $sc-main-navigation-link-hover-border-color;
+
+		border-top-width: $sc-main-navigation-link-hover-border-top-width;
+
+		border-bottom-width: $sc-main-navigation-link-hover-border-bottom-width;
+
+		//KODELLA COMMENT
+		//padding-top: ($sc-padding-lv2) - ($sc-main-navigation-link-hover-border-top-width);
+		//padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-hover-border-bottom-width);
+	}
+
+	&:focus {
+		color: #FFFFFF !important;
+		background-color: black;
+
+		border-style: solid;
+		border-color: $sc-main-navigation-link-active-border-color;
+
+		border-top-width: $sc-main-navigation-link-active-border-top-width;
+
+		border-bottom-width: $sc-main-navigation-link-active-border-bottom-width;
+
+		//KODELLA COMMENT
+		//padding-top: ($sc-padding-lv2) - ($sc-main-navigation-link-active-border-top-width);
+		//padding-bottom: ($sc-padding-lv2) - ($sc-main-navigation-link-active-border-bottom-width);
+	}
+}
+
+.open .header-menu-level1-anchor{
+	color: white;
+	background-color:black;
+}
+
+.header-menu-home-anchor,
+.header-menu-shop-anchor{
+	@extend .header-menu-level1-anchor;
+}
+
+//maxi menu level 2
+.header-menu-back {
+	display: none;
+}
+
+.header-menu-level2 > li {
+	float: left;
+	width: auto;
+	padding-right: 0px;
+}
+
+@-moz-document url-prefix() {
+	.header-menu-level2 {
+		margin-top: 1px;
+	}
+}
+
+.header-menu-level2-anchor {
+	text-transform: $sc-main-navigation-submenu-heading-text-transform;
+	text-decoration: $sc-main-navigation-submenu-heading-text-decoration;
+	font-weight: bold;
+	color: black;
+	padding-bottom: 0px;
+	margin-bottom: 2px;
+	border-bottom: 0px;
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+
+	&:hover,&:active {
+		color: black;
+	}
+}
+
+//maxi menu level 3
+.header-menu-level3-anchor {
+	display: block;
+	//KODELLA COMMENT
+	//padding: $sc-padding-lv1 0;
+
+	padding-left: 15px;
+	color: black;
+	text-decoration: none !important;
+	font-size: 14px;
+	line-height: 22px;
+
+	&:hover, &:focus {
+		color: black;
+		text-decoration: underline !important;
+	}
+
+	&:active, &.active {
+		color: black;
+		text-decoration: underline !important;
+	}
+}
+
+.header-menu-level3 {
+	margin-left: -5px;
+	margin-top: 3px;
+}
+
+.header-menu-level3 > li > a:hover {
+	&:before {
+		content: '›';
+		display: block;
+		position: absolute;
+		color: #847E77;
+		text-decoration: none;
+		margin-left: -10px;
+	}
+}
+
+//container fix for maxi menu on desktop
+.header-menu-push-icon, .header-menu-pop-icon {
+	display: none;
+}
+
+.header-menu-level-container {
+	background-color: white;
+	display: none;
+	position: absolute;
+	left: 225px;
+	top: 0;
+	width: 100%;
+	min-height: 150px;
+	z-index: 1003;
+	height: 450px;
+	
+	//KODELLA COMMENT
+	padding: $sc-padding-lv5 0;
+	//border-bottom: 1px solid $sc-color-theme-border-light;
+	//border-top: 1px solid $sc-color-theme-border-light;
+	
+	//@include box-shadow(0 6px 12px transparentize($sc-neutral-shade-500, 1-0.175));
+
+	> li {
+		@extend .container;
+		background-color: white;
+		position: relative;
+		top: -35px;
+		box-shadow: 4px 5px 9px -5.5px #847e77, 2px -3px 8px -5px #847e77;
+		height: 462.2px;
+		margin-left: -5.6px;
+		border-left: 1px solid #CFCFCF;
+
+		@media (max-width: 979px) and (min-width: 768px) {
+			width: 505px;
+			padding-right: 0px;
+		}
+
+		@media(min-width: 1200px) {
+			width: 950px;
+			padding-right: 110px;
+		}
+
+		@media (min-width: 980px) and (max-width: 1199px) {
+			width: 720px;
+		}
+	}
+}
+
+.header-menu-level-container > li:before {
+	height: 10px;
+	content: " ";
+	display: block;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	left: -16px;
+	margin-bottom: 0px;
+	background-color: #F3C600;
+
+	@media(min-width: 1200px) {
+		width: 115.4%;
+	}
+}
+
+//maxi menu opened
+.open .header-menu-level-container {
+	display: block;
+}
+
+.open .header-profile-menu-myaccount-container {
+	@extend .container;
+	display: block;
+	margin-left: 0;
+	margin-right:0;
+	width: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*.open .header-menu-level1-anchor:before{
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	margin-left: -7.5px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid $sc-neutral-shade-0;
+	border-left: 7px solid transparent;
+	border-bottom-color: transparentize($sc-neutral-shade-500, 1-0.2);
+	content: '';
+}*/
+
+.open .header-menu-level1-anchor:after{
+	content: " ";
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -8px;
+	top: 50%;
+	margin-top: -15px;
+	border-top: 15px solid transparent;
+	border-left: 8px solid black;
+	border-bottom: 15px solid transparent;
+	z-index: 999999;
+}
+
+.menu-button-container {
+	@extend .container;
+
+	@media (min-width: 768px) and (max-width: 979px) {
+		width: 724px;
+	}
+
+	@media (min-width: 980px) and (max-width: 992px){
+		width: auto;
+	} 
+}
+
+.lonestar-image-menu-button {
+	width: 166px;
+	margin-left: -14.5px;
+	padding-left: 39.5px !important;
+	padding-top: 8px !important;
+	padding-bottom: 6px !important;
+	display: block;
+	-webkit-box-shadow: 0 1px 0px #fdf8a6 inset, 0 -1px 0px #fdf8a6 inset, 0 2px 3px #000;
+	box-shadow: 0 1px 0px #fdf8a6 inset, 0 -1px 0px #fdf8a6 inset, 0 2px 3px #000;
+	position: relative;
+	text-align: left;
+	font-weight: normal;
+	background-color: #F5D100;
+	background-position: 0 -524px;
+	text-decoration: none;
+	box-sizing: border-box;
+	border: 1px solid #99863B;
+	border-radius: 4px;
+	color: black;
+	text-shadow: 0 1px #FF0;
+	padding: 10px 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1.3em;
+	text-indent: 0 !important;
+	top: 1px;
+
+	&:before {
+		background-color: #F6D54F;
+		-webkit-box-shadow: 0 -1px 0 #fdf8a6 inset, 0 -1px 0 rgba(255,255,255,0.2) inset, 0 1px 0 #393128 inset;
+		box-shadow: 0 -1px 0 #fdf8a6 inset, 0 -1px 0 rgba(255,255,255,0.2) inset, 0 1px 0 #393128 inset;
+		content: " ";
+		position: absolute;
+		top: 10px;
+		left: 5px;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		border-radius: 45px;
+	}
+
+	&:hover {
+		color: black;
+	}
+
+	@media (min-width: 980px) and (max-width: 1199px) {
+		margin-left: 0px;
+		padding-left: 40px !important;
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		display: block !important;
+	}
+}
+
+.icon-24-star-black:before {
+	background-position: -45px -256px;
+	width: 24px;
+	height: 24px;
+}
+
+.lonestar-image-menu-button > strong:after {
+	border-color: black transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px;
+	width: 0;
+	height: 0;
+	content: ' ';
+	position: absolute;
+	top: 23px;
+	right: 10px;
+}
+
+.lonestar-icon-24-star-black > strong:after {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+.lonestar-icon-24-star-black:after {
+	width: 24px;
+	height: 24px;
+	background-position: -41px -255px;
+	top: 37px;
+	left: 4px;
+}
+
+.flyout-menu-open {
+	display: block;
+}
+
+.flyout-menu-closed {
+	display: none;
+}
+
+.menu-details {
+	font-size: 13px;
+	color: #847E77;
+	line-height: 0px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.open > .header-menu-level1-anchor > .menu-details {
+	&:after {
+		right: -8px;
+		content: '';
+		position: absolute;
+		top: 50%;
+		margin-top: -22px;
+		border-top: 22px solid rgba(255,255,255,0);
+		border-left: 8px solid black;
+		border-bottom: 22px solid rgba(255,255,255,0);
+		z-index: 9999999;
+	}
+}
+
+#id
+, #practice-classroom
+, #apparel-accessories {
+	height: 40.5px;
+}
+
+#stands-hardware {
+	height: 41px;
+}
+
+.open #concert,
+.open #apparel-accessories {
+	height: 43px;
+}
+
+.stick-mallets-ad-img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 346px;
+	width: 246px;
+}
+
+.drum-heads-ad-img {
+	position: absolute;
+	right: -40px;
+	bottom: 60px;
+	width: 315px;
+	height: 245px;
+}
+
+.drums-drum-sets-ad-img {
+	position: absolute;
+	right: 0;
+	top: 144px;
+	width: 262px;
+	height: 268px;
+}
+
+.cymbals-gongs-ad-img {
+	position: absolute;
+	top: 128px;
+	right: -50px;
+	width: 312px;
+	height: 294px;
+}
+
+.keyboards-ad-img {
+	position: absolute;
+	width: 299px;
+	height: 248px;
+	right: -25px;
+	bottom: 50px;
+}
+
+.latin-world-effects-ad-img {
+	position: absolute;
+	width: 258px;
+	height: 280px;
+	right: -45px;
+	bottom: 50px;
+}
+
+.marching-ad-img {
+	position: absolute;
+	width: 226px;
+	height: 269px;
+	bottom: 40px;
+	right: 30px;
+}
+
+.concert-ad-img {
+	position: absolute;
+	width: 267px;
+	height: 366px;
+	right: -38px;
+	bottom: -20px;
+}
+
+.practice-classroom-ad-img {
+	position: absolute;
+	width: 277px;
+	height: 272px;
+	bottom: 50px;
+	right: 0;
+}
+
+.sheet-music-books-ad-img {
+	position: absolute;
+	width: 315px;
+	height: 285px;
+	bottom: 0;
+	right: 0;
+}
+
+.cases-bags-ad-img {
+	position: absolute;
+	width: 297px;
+	height: 297px;
+	right: -30px;
+	bottom: 20px;
+}
+
+.field-audio-recording-ad-img {
+	position: absolute;
+	width: 273px;
+	height: 452px;
+	bottom: 0;
+	right: 0;
+}
+
+.stands-hardware-ad-img {
+	position: absolute;
+	width: 268px;
+	height: 344px;
+	bottom: 0;
+	right: 0;
+}
+
+.apparel-accessories-ad-img {
+	position: absolute;
+	width: 338px;
+	height: 354px;
+	right: -20px;
+	bottom: 0;
+}
+
+.cymbals-gongs-header-menu-level2-column1,
+.keyboards-header-menu-level2-column1,
+.latin-world-effects-header-menu-level2-column1,
+.concert-header-menu-level2-column1,
+.sheet-music-books-header-menu-level2-column1,
+.field-audio-recording-header-menu-level2-column1 {
+	padding-left: 8px;
+}
+
+.sticks-mallets-header-menu-level2-column2 {
+	padding-left: 21px;
+}
+
+.sticks-mallets-header-menu-level2-column3 {
+	padding-left: 65px;
+}
+
+.sticks-mallets-header-menu-level2-column4 {
+	padding-left: 112.4px;
+	margin-top: 11px;
+	line-height: 18px;
+}
+
+.drum-heads-header-menu-level2-column2 {
+	padding-left: 112.7px;
+}
+
+.drum-heads-header-menu-level2-column3 {
+	padding-left: 46.5px;
+}
+
+.drum-heads-header-menu-level2-column4 {
+	padding-left: 132px;
+	margin-top: 11px;
+	line-height: 18px;
+}
+
+.drums-drum-sets-header-menu-level2-column2 {
+	padding-left: 107.8px;
+}
+
+.drums-drum-sets-header-menu-level2-column3 {
+	padding-left: 65.1px;
+}
+
+.drums-drum-sets-header-menu-level2-column4 {
+	padding-left: 129px;
+	margin-top: 30px;
+}
+
+.cymbals-gongs-header-menu-level2-column2 {
+	padding-left: 128px;
+}
+
+.cymbals-gongs-header-menu-level2-column3 {
+	padding-left: 65.1px;
+}
+
+.cymbals-gongs-header-menu-level2-column4 {
+	padding-left: 104.5px;
+	margin-top: 45px;
+}
+
+.keyboards-header-menu-level2-column2 {
+	padding-left: 37.5px;
+}
+
+.keyboards-header-menu-level2-column3 {
+	padding-left: 36.7px;
+}
+
+.keyboards-header-menu-level2-column4 {
+	padding-left: 122.5px;
+	margin-top: 31px;
+}
+
+.latin-world-effects-header-menu-level2-column2 {
+	padding-left: 50.5px;
+}
+
+.latin-world-effects-header-menu-level2-column3 {
+	padding-left: 59.3px;
+}
+
+.latin-world-effects-header-menu-level2-column4 {
+	padding-left: 163.7px;
+}
+
+.marching-header-menu-level2-column1{
+	padding-left: 8.4px;
+}
+
+.marching-header-menu-level2-column2{
+	padding-left: 56.5px;
+}
+
+.marching-header-menu-level2-column3{
+	padding-left: 65px;
+}
+
+.marching-header-menu-level2-column4{
+	padding-left: 66.4px;
+	margin-top: 41px;
+}
+
+.concert-header-menu-level2-column2 {
+	padding-left: 41.9px;
+}
+
+.concert-header-menu-level2-column3 {
+	padding-left: 27.5px;
+}
+
+.concert-header-menu-level2-column4 {
+	padding-left: 113.8px;
+	margin-top: 30px;
+}
+
+.sticks-mallets-header-menu-level2-column1,
+.drum-heads-header-menu-level2-column1,
+.drums-drum-sets-header-menu-level2-column1,
+.practice-classroom-header-menu-level2-column1,
+.stands-hardware-header-menu-level2-column1,
+.apparel-accessories-header-menu-level2-column1 {
+	padding-left: 8.1px;
+}
+
+.practice-classroom-header-menu-level2-column2 {
+	padding-left: 79px;
+}
+
+.practice-classroom-header-menu-level2-column3 {
+	padding-left: 22.7px;
+}
+
+.practice-classroom-header-menu-level2-column4 {
+	padding-left: 94.2px;
+}
+.sheet-music-books-header-menu-level2-column2 {
+	padding-left: 74.5px;
+}
+.sheet-music-books-header-menu-level2-column3 {
+	padding-left: 17px;
+	z-index: 1;
+	position: absolute;
+}
+
+.sheet-music-books-header-menu-level2-column4 {
+	padding-left: 275px;
+	margin-top: 60px;
+}
+
+.cases-bags-header-menu-level2-column1 {
+	padding-left: 8.1px;
+}
+
+.cases-bags-header-menu-level2-column2 {
+	padding-left: 97.3px;
+}
+
+.cases-bags-header-menu-level2-column3 {
+	padding-left: 123px;
+}
+
+.cases-bags-header-menu-level2-column4 {
+	padding-left: 128.5px;
+	margin-top: 41px;
+}
+
+.field-audio-recording-header-menu-level2-column2 {
+	padding-left: 44.1px;
+}
+
+.field-audio-recording-header-menu-level2-column3 {
+	width: 225px;
+	padding-left: 22.6px;
+}
+
+.stands-hardware-header-menu-level2-column2 {
+	padding-left: 24.5px;
+}
+
+.stands-hardware-header-menu-level2-column3 {
+	padding-left: 20px;
+}
+
+.stands-hardware-header-menu-level2-column4 {
+	padding-left: 106px;
+	margin-top: -1px;
+}
+
+.apparel-accessories-header-menu-level2-column2 {
+	padding-left: 32.1px;
+}
+
+.apparel-accessories-header-menu-level2-column3 {
+	padding-left: 17px;
+}
+
+.apparel-accessories-header-menu-level2-column4 {
+	padding-left: 183.5px;
+	margin-top: 25px;
+}
+
+.sheet-music-books-solo-duets-header-menu-level3 > li:nth-child(8) {
+	&:before {
+		content: " ";
+		display: block;
+		width: 102%;
+		margin-left: 16px;
+		padding-top: 5px;
+		margin-top: 5px;
+		border-top: 1px solid #cfcfcf;
+	}
+}
+
+.apparel-accessories-apparel-gifts-header-menu-level3 > li:nth-child(4) {
+	&:before {
+		content: " ";
+		display: block;
+		width: 80.5%;
+		margin-left: 16px;
+		padding-top: 5px;
+		margin-top: 5px;
+		border-top: 1px solid #cfcfcf;
+	}
+}
+
+.keyboards-instruments-header-menu-level3 > li:last-child,
+.marching-field-audio-header-menu-level3 > li:last-child,
+.practice-classroom-elementary-music-orff-header-menu-level3 > li:last-child
+{
+	&:before {
+		content: " ";
+		display: block;
+		width: 82.5%;
+		margin-left: 16px;
+		padding-top: 5px;
+		margin-top: 5px;
+		border-top: 1px solid #cfcfcf;
+	}
+}
+
+.field-audio-recording-popular-brands-header-menu-level3 > li:last-child {
+	&:before {
+		content: " ";
+		display: block;
+		width: 81%;
+		margin-left: 16px;
+		padding-top: 5px;
+		margin-top: 5px;
+		border-top: 1px solid #cfcfcf;
+	}
+}
+
+.header-menu-level2 > li > ul > li {
+	margin-top: 11px;
+	margin-bottom: 21px;
+}
+
+.sticks-mallets-ad-content,
+.drum-heads-ad-content,
+.drums-drum-sets-ad-content,
+.cymbals-gongs-ad-content,
+.keyboards-ad-content,
+.latin-world-effects-ad-content,
+.marching-ad-content,
+.concert-ad-content,
+.practice-classroom-ad-content,
+.sheet-music-books-ad-content,
+.cases-bags-ad-content,
+.stands-hardware-ad-content,
+.apparel-accessories-ad-content {
+	position: absolute;
+	margin-top: -11px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:after {
+		content: ' ';
+		display: inline-block;
+		width: 0;
+		height: 0;
+		top: 22.5px;
+		border: 5px inset rgba(255,255,255,0);
+		border-top: 8px solid black;
+		position: absolute;
+		margin-left: 3.5px;
+	}
+}
+
+.keyboards-ad-content {
+	line-height: 18px;
+}
+
+.cases-bags-ad-content {
+	line-height: 18px;
+}
+
+.latin-world-effects-ad-content {
+	line-height: 18px;
+}
+
+.sticks-mallets-ad-content:after {
+	margin-left: 164.5px;
+}
+
+@-moz-document url-prefix() {
+	.sticks-mallets-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.drums-drum-sets-ad-content:after {
+	margin-left: 147px;
+	margin-top: -17px;
+}
+
+@-moz-document url-prefix() {
+	.drums-drum-sets-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.cymbals-gongs-ad-content:after {
+	margin-left: 133px;
+	margin-top: -17px;
+}
+
+@-moz-document url-prefix() {
+	.cymbals-gongs-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.keyboards-ad-content:after {
+	top: 22.5px;
+	margin-left: 175px;
+}
+
+@-moz-document url-prefix() {
+	.keyboards-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.concert-ad-content:after {
+	top: 6px;
+	left: 149px;
+}
+
+.sheet-music-books-ad-content:after {
+	top: 6px;
+	margin-left: 159px;
+}
+
+@-moz-document url-prefix() {
+	.sheet-music-books-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.stands-hardware-ad-content:after {
+	top: 5.5px;
+	margin-left: 160.5px;
+}
+
+@-moz-document url-prefix() {
+	.stands-hardware-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.apparel-accessories-ad-content:after {
+	top: 5.5px;
+	margin-left: 97.5px;
+}
+
+@-moz-document url-prefix() {
+	.apparel-accessories-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.cases-bags-ad-content:after {
+	top: 23px;
+	margin-left: 147px;
+}
+
+@-moz-document url-prefix() {
+	.cases-bags-ad-content:after {
+		margin-left: 3.5px;
+	}
+}
+
+.latin-world-effects-ad-content {
+	margin-left: 2.5px;
+}
+
+.sticks-mallets-content {
+	//top: 6px;
+	//margin-left: 152px;
+	width:162px;
+}
+
+.drum-heads-content {
+	width: 170px;
+	margin-left: -29.5px;
+	margin-top: 9px;
+}
+
+.marching-content,
+.practice-classroom-content {
+	line-height: 18px;
+}
+
+.sticks-mallets-price,
+.drum-heads-price,
+.drums-drum-sets-price,
+.cymbals-gongs-price,
+.keyboards-price,
+.latin-world-effects-price,
+.marching-price,
+.concert-price,
+.practice-classroom-price,
+.sheet-music-books-price,
+.cases-bags-price,
+.stands-hardware-price,
+.apparel-accessories-price {
+	position: absolute;
+	padding: 7px 10px;
+	display: block;
+	border-radius: 5px;
+	font-size: 13px;
+	background-color: #f3c600;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}
+
+.sticks-mallets-price {
+	margin-top: 32px;
+}
+
+.drum-heads-price {
+	margin-top: 52px;
+	margin-left: -29px;
+}
+
+.drums-drum-sets-price {
+	top: 55px;
+	height: 32px;
+	padding: 6px 10px;
+}
+
+.cymbals-gongs-price {
+	margin-top: 15px;
+	height: 32px;
+	padding: 6px 10px;
+}
+
+.keyboards-price {
+	margin-top: 32px;
+	height: 32px;
+	padding: 6px 9.5px;
+	margin-left: 0.5px;
+}
+
+.latin-world-effects-price {
+	margin-top: 32px;
+	height: 32px;
+	padding: 6px 10px;
+	margin-left: 2px;
+}
+
+.marching-price {
+	padding: 6px 9.4px;
+	margin-top: 32px;
+	margin-left: 1px;
+}
+
+.concert-price {
+	margin-top: 15px;
+	padding: 6px 10px;
+}
+
+.practice-classroom-price {
+	margin-top: 32px;
+	padding: 6px 9.5px;
+	margin-left: 1px;
+	height: 32px;
+}
+
+.cases-bags-price {
+	margin-top: 31.5px;
+	height: 32px;
+	padding: 6px 10.1px;
+}
+
+.sheet-music-books-price {
+	margin-top: 15px;
+	height: 32px;
+	padding: 6px 10px;
+}
+
+.stands-hardware-price {
+	margin-top: 15px;
+	height: 32px;
+	padding: 6px 10px;
+	padding-left: 10.2px;
+}
+
+.apparel-accessories-price {
+	margin-top: 15px;
+	height: 32px;
+	padding: 5.5px 9.5px;
+	margin-left: 1px;
+}
+
+.ad-unit-details {
+	font-size: 11px;
+	position: absolute;
+	bottom: 5px;
+	right: -34.7px;
+	color: #847E77;
+}
+
+.drum-heads-ad-unit-details {
+	right: -34.2px;
+}
+
+.drums-drum-sets-ad-unit-details {
+	bottom: 6px;
+	right: -34.5px;
+}
+
+.cymbals-gongs-ad-unit-details {
+	right: -34.39px;
+	bottom: 6px;
+}
+
+.keyboards-ad-unit-details {
+	right: -34.57px;
+	bottom: 6px;
+}
+
+.stands-hardware-ad-unit-details {
+	bottom: 6px;
+	right: -34.3px;
+}
+
+.latin-world-effects-ad-unit-details,
+.marching-ad-unit-details,
+.practice-classroom-ad-unit-details,
+.sheet-music-books-ad-unit-details,
+.apparel-accessories-ad-unit-details {
+	bottom: 6px;
+}
+
+.concert-ad-unit-details {
+	bottom: 6px;
+	right: -34.2px;
+}
+
+.cases-bags-ad-unit-details {
+	bottom: 6px;
+	right: -34.3px;
+}
+
+
+.ad-anchor:hover {
+	.sticks-mallets-ad-content:after,
+	.drum-heads-ad-content:after,
+	.drums-drum-sets-ad-content:after,
+	.cymbals-gongs-ad-content:after,
+	.keyboards-ad-content:after,
+	.latin-world-effects-ad-content:after,
+	.marching-ad-content:after,
+	.concert-ad-content:after,
+	.practice-classroom-ad-content:after,
+	.sheet-music-books-ad-content:after,
+	.cases-bags-ad-content:after,
+	.stands-hardware-ad-content:after,
+	.apparel-accessories-ad-content:after {
+		border-top-color: $yellow;
+	}
+}
+
+.menu-details-container {
+	margin-top: 8px;
+}
+
+$width: 175px;
+
+.lonestar-article-img {
+	float: right;
+	margin-right: $width - 154;
+	margin-top: -18px;
+}
+.sticks-mallets-the-beat-header-menu-level3,
+.drum-heads-the-beat-header-menu-level3,
+.drums-drum-sets-the-beat-header-menu-level3,
+.cymbals-gongs-the-beat-header-menu-level3,
+.keyboards-the-beat-header-menu-level3,
+.marching-the-beat-header-menu-level3,
+.concert-the-beat-header-menu-level3,
+.practice-classroom-the-beat-header-menu-level3,
+.sheet-music-books-the-beat-header-menu-level3,
+.cases-bags-the-beat-header-menu-level3,
+.stands-hardware-the-beat-header-menu-level3,
+.apparel-accessories-the-beat-header-menu-level3,
+.field-audio-recording-the-beat-header-menu-level3,
+.latin-world-effects-the-beat-header-menu-level3  > li > a {
+	width: $width;
+}
+
+.sticks-mallets-header-menu-level2-column3,
+.drum-heads-header-menu-level2-column3,
+.drums-drum-sets-header-menu-level2-column3,
+.cymbals-gongs-header-menu-level2-column3,
+.keyboards-header-menu-level2-column3,
+.marching-header-menu-level2-column3,
+.concert-header-menu-level2-column3,
+.practice-classroom-header-menu-level2-column3,
+.sheet-music-books-header-menu-level2-column3,
+.cases-bags-header-menu-level2-column3,
+.stands-hardware-header-menu-level2-column3,
+.apparel-accessories-header-menu-level2-column3,
+.field-audio-recording-header-menu-level2-column3,
+.latin-world-effects-header-menu-level2-column3 {
+	@media (min-width: 980px) and (max-width: 1199px) {
+		display: none;
+	}
+}
+
+
+.sticks-mallets-header-menu-level2-column3,
+.drum-heads-header-menu-level2-column3,
+.drums-drum-sets-header-menu-level2-column3,
+.cymbals-gongs-header-menu-level2-column3,
+.keyboards-header-menu-level2-column3,
+.marching-header-menu-level2-column3,
+.concert-header-menu-level2-column3,
+.practice-classroom-header-menu-level2-column3,
+.sheet-music-books-header-menu-level2-column3,
+.cases-bags-header-menu-level2-column3,
+.stands-hardware-header-menu-level2-column3,
+.apparel-accessories-header-menu-level2-column3,
+.field-audio-recording-header-menu-level2-column3,
+.latin-world-effects-header-menu-level2-column3,
+.sticks-mallets-header-menu-level2-column4,
+.drum-heads-header-menu-level2-column4,
+.drums-drum-sets-header-menu-level2-column4,
+.cymbals-gongs-header-menu-level2-column4,
+.keyboards-header-menu-level2-column4,
+.marching-header-menu-level2-column4,
+.concert-header-menu-level2-column4,
+.practice-classroom-header-menu-level2-column4,
+.sheet-music-books-header-menu-level2-column4,
+.cases-bags-header-menu-level2-column4,
+.stands-hardware-header-menu-level2-column4,
+.apparel-accessories-header-menu-level2-column4,
+.field-audio-recording-header-menu-level2-column4,
+.latin-world-effects-header-menu-level2-column4 {
+	@media (min-width: 768px) and (max-width: 979px) {
+		display: none;
+	}
+}

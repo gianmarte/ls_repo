@@ -1,0 +1,129 @@
+.header-menu-myaccount-back{
+	@extend .header-sidebar-menu-back;
+}
+
+.header-menu-myaccount-pop-icon {
+	@extend .header-sidebar-menu-pop-icon;
+}
+
+.header-menu-myaccount-menu-push-icon {
+	@extend .header-sidebar-menu-push-icon;
+}
+
+.header-sidebar-menu-wrapper .header-menu-myaccount-signout-link {
+	display: none;
+}
+
+.header-menu-myaccount a.active {
+	background-color: $sc-color-theme-background;
+}
+
+.header-menu-myaccount-level3{}
+
+//applies only to the myaccount menu on desktop header
+.header-menu-profile {
+
+	.header-menu-myaccount-anchor {
+		display: none;
+	}
+
+	.header-menu-myaccount-overview-anchor {
+		//KODELLA ADDED
+		&:hover, &:focus, &:active {
+			text-decoration: underline;
+			background-color: rgba(255,255,255,0);
+		}
+
+		@media (min-width: $screen-sm-min) {
+			font-size: $sc-font-size-m;
+			float: left;
+			//KODELLA COMMENT
+			//padding: $sc-padding-lv3 0;
+
+			//KODELLA ADDED
+			padding-left: 0;
+
+		}
+	}
+
+	.header-menu-myaccount-back {
+		display: none;
+	}
+
+	.header-menu-myaccount-menu-push-icon{
+		display:none;
+	}
+
+	.header-menu-myaccount-overview {
+		display: block;
+		margin-bottom: $sc-margin-lv7;
+		border-bottom: 1px solid $sc-color-theme-border-light;
+		@extend .clearfix;
+	}
+
+	.header-menu-myaccount-item-level2 {
+		float: left;
+		width: 20%;
+		padding-right: $sc-padding-lv8;
+	}
+
+	.header-menu-myaccount-anchor-level2 {
+		@extend .header-menu-level2-anchor;
+		color: white;
+
+		&:hover, &:focus, &:active {
+			color:white;
+			border-bottom: 1px solid #4b3523;
+			background-color: rgba(255,255,255,0);
+		}
+	}
+
+
+	.header-menu-myaccount-anchor-level3 {
+		@extend .header-menu-level3-anchor;
+		color: white;
+
+		&:hover, &:focus, &:active {
+			color:white;
+			background-color: rgba(255,255,255,0);
+		}
+	}
+
+	.header-menu-myaccount-signout-link {
+		float: right;
+		display:block;
+		//KODELLA COMMENT
+		//padding: $sc-padding-lv3 0;
+
+		//KODELLA ADDED
+		//START
+		padding-left: 0;
+
+		&:hover, &:focus, &:active {
+			text-decoration: underline;
+			background-color: rgba(255,255,255,0);
+		}
+		//END
+	}
+
+	.header-menu-myaccount-signout-icon{
+		@extend .fa;
+		@extend %fa-sign-out;
+		font-size: $sc-font-size-m;
+	}
+}
+
+.header-menu-myaccount-level4 {
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+.header-menu-myaccount-item-level3 {}
+.header-menu-myaccount-anchor-level4 {}
+.header-menu-myaccount-level2-orders {}
+.header-menu-myaccount-level3-orders {}
+
+.header-menu-myaccount{
+	margin-top: -23.3px;
+}

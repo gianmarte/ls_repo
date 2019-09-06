@@ -1,0 +1,44 @@
+.header-simplified-header{
+	height: 136px;
+	background-color: #17100a;
+	//KODELLA COMMENT
+	//box-shadow: 3px 0px 6px $sc-header-shadow-color;
+
+	@media (max-width: $screen-sm-min) {
+		height: 65px;		
+	}
+}
+
+.header-simplified-header-logo{
+	@extend .container;
+
+	.header-logo{
+		width: 120px !important;
+		height: 110px !important;
+		margin-bottom: 8px !important;
+		margin-top: 12px !important;
+		background-position: -334px -738px;
+	}
+
+	.lonestar-established {
+		position: absolute;
+		margin-left: 130px;
+	}
+
+	.lonestar-tagline {
+		float: right;
+		position: relative;
+		margin-top: -70px;
+		height: 75px;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	.lonestar-icon-24-phone-yellow:after {
+		background-position: -82px -220px;
+		left: 2px;
+	}
+}
+

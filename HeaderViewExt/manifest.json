@@ -1,0 +1,115 @@
+{
+    "name": "HeaderViewExt",
+    "fantasyName": "Header View Extension",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA",
+    "description": "Added some functionality to hide header elements on checkout page",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/if_10_2284572c.png"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        },
+        "javascript": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/HeaderViewExt/Configuration/HeaderMenuNavigation.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/HeaderViewExt/Sass/_headerext.scss",
+            "myaccount": "Modules/HeaderViewExt/Sass/_headerext.scss",
+            "checkout": "Modules/HeaderViewExt/Sass/_headerext.scss"
+        },
+        "files": [
+            "Modules/HeaderViewExt/Sass/_header-menu-ext.scss",
+            "Modules/HeaderViewExt/Sass/_headerext.scss",
+            "Modules/HeaderViewExt/Sass/_header-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-logo-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-menu-myaccount-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-mini-cart-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-mini-cart-item-cell-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-profile-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-sidebar-ext.scss",
+            "Modules/HeaderViewExt/Sass/_header-simplified-ext.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HeaderViewExt/Templates/headerviewlogo_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_myaccount_view_ext.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/HeaderViewExt/Templates/headerviewlogo_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_myaccount_view_ext.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HeaderViewExt/Templates/headerviewlogo_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_ext.tpl",
+                    "Modules/HeaderViewExt/Templates/header_menu_myaccount_view_ext.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js",
+            "myaccount": "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js",
+            "checkout": "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Logo.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.MyAccount.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/jQuery.Menu.Aim.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Logo.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.MyAccount.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/jQuery.Menu.Aim.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/HeaderViewExt/JavaScript/Kodella.HeaderViewExt.HeaderViewExt.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Logo.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/Header.Menu.MyAccount.View.Ext.js",
+                    "Modules/HeaderViewExt/JavaScript/jQuery.Menu.Aim.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\HeaderViewExt"
+}
