@@ -1,0 +1,82 @@
+{
+    "name": "CartExt",
+    "fantasyName": "Cart Module Extension",
+    "vendor": "Kodella",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA",
+    "description": "Cart Module Extension",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/CartExt/Sass/_cartext-cartext.scss",
+            "myaccount": "Modules/CartExt/Sass/_cartext-cartext.scss",
+            "checkout": "Modules/CartExt/Sass/_cartext-cartext.scss"
+        },
+        "files": [
+            "Modules/CartExt/Sass/_cartext-cartext.scss",
+            "Modules/CartExt/Sass/_cartext.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_list.tpl",
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_edit.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_list.tpl",
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_edit.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_list.tpl",
+                    "Modules/CartExt/Templates/kodella_cartext_cartext_edit.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js",
+            "myaccount": "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js",
+            "checkout": "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js",
+                    "Modules/CartExt/JavaScript/CartExt.Lines.View.Ext.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js",
+                    "Modules/CartExt/JavaScript/CartExt.Lines.View.Ext.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/CartExt/JavaScript/Kodella.CartExt.CartExt.js",
+                    "Modules/CartExt/JavaScript/CartExt.Lines.View.Ext.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace\\CartExt"
+}
